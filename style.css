@@ -114,3 +114,9 @@ h2 {
   color: #fff;
   display: none;
 }
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+}
