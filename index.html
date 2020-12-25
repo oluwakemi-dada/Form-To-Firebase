@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form to Firebase</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="contactForm" class="form">
+        <h2>Contact Us</h2>
+        <div class="alert">Your Message has been sent</div>
+        <div class="form-control">
+          <label for="fullname">Fullname</label>
+          <input type="text" id="fullname" placeholder="Enter fullname" />
+          <small>is required</small>
+        </div>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter email" />
+          <small>is required</small>
+        </div>
+        <div class="form-control">
+          <label for="phonenumber">Phone Number</label>
+          <input
+            type="text"
+            id="phonenumber"
+            placeholder="Enter phone number"
+          />
+          <small>is required</small>
+        </div>
+        <div class="form-control">
+          <label for="message">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Enter message"
+          ></textarea>
+          <small>is required</small>
+        </div>
+        <!-- <div class="form-control">
+          <label for="upload">Upload</label>
+          <input type="file" name="upload" id="upload" />
+          <small>is required</small>
+        </div> -->
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
