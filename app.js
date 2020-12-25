@@ -63,6 +63,13 @@ const submitForm = (e) => {
   if (fullname !== '' && email !== '' && phoneNumber !== '' && message !== '') {
     form.reset();
 
+    // Remove success borders
+    const allFormControl = document.querySelectorAll('.form-control');
+    const formControlArr = Array.from(allFormControl);
+    formControlArr.forEach((formControl) => {
+      formControl.classList.remove('success');
+    });
+
     // Save message
     saveMessage(fullname, email, phoneNumber, message);
 
