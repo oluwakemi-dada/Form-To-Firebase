@@ -119,4 +119,8 @@ h2 {
   .container {
     width: 90%;
   }
+
+  .form {
+    padding: 30px 20px;
+  }
 }
